@@ -19,3 +19,7 @@
 * est code 'make test'
 
 ## Output
+
+In Git Action, it shows the result that testing different versions of python has passed.
+
+<img width="1770" alt="Screenshot 2023-09-22 at 8 53 43 PM" src="https://github.com/nogibjj/IDS706_Alicia_miniproject4/assets/143651934/1a009159-1135-49fd-934a-f0648487e3fc">
