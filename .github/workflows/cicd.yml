@@ -1,16 +1,23 @@
-name: CI
+name: Test Multiple Python Versions
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
+  #workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9,3.10.x,3.11]
     steps:
       - uses: actions/checkout@v3
+      - name: set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3 
+        with:
+          python-version: ${{ matrix.python-version }} 
       - name: install packages
         run: make install
       - name: lint

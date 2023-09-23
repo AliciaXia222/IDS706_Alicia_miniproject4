@@ -14,4 +14,3 @@ uvicorn==0.18.3
 pandas
 scikit-learn
 matplotlib
-ydata_profiling

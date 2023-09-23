@@ -3,7 +3,6 @@ Main cli or app entry point
 """
 import pandas as pd
 import matplotlib.pyplot as plt
-from ydata_profiling import ProfileReport
 
 
 # Read the uploaded csv file: population.csv
@@ -35,22 +34,3 @@ def viz_population():
     plt.legend()
     plt.tight_layout()
     plt.show()
-
-
-# generate a analyse report
-def report_population():
-    population2 = pd.read_csv("population.csv")
-    population_report = population2.loc[
-        0:10, ["Country Name", "2018", "2019", "2020", "2021", "2022"]
-    ]
-    profile = ProfileReport(
-        population_report, title="Country Population Report", explorative=True
-    )
-    profile.to_file("data_profiling_report.html")
-
-
-def generate_summary(csv):
-    """generates report of any dataset"""
-    general_df = pd.read_csv(csv)
-    profile = ProfileReport(general_df, title="Profiling Report")
-    profile.to_file("profile.html")
