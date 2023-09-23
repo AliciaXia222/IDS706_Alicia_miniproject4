@@ -1,4 +1,4 @@
-[![CI](https://github.com/AliciaXia222/IDS_706_miniproject_1/actions/workflows/cicd.yml/badge.svg)](https://github.com/AliciaXia222/IDS_706_miniproject_1/actions/workflows/cicd.yml)
+[![Test Multiple Python Versions](https://github.com/nogibjj/IDS706_Alicia_miniproject4/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/IDS706_Alicia_miniproject4/actions/workflows/cicd.yml)
 
 # IDS_706_miniproject_4-Github Actions Matrix Build for Multiple Python Versions
 ## Purpose
